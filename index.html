@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: 'Kumbh Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+      background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+      background-repeat: no-repeat, no-repeat;
+      background-color: hsl(185deg, 75%, 39%);
+    }
+
+    p,
+    h3 {
+      font-size: 18px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      margin: 100px auto;
+      width: 340px;
+      height: 340px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .container .front {
+      height: 40%;
+      width: 100%;
+      background-color: hsl(185, 75%, 39%);
+      background-repeat: no-repeat, no-repeat;
+      background: url(./images/bg-pattern-card.svg);
+      border-radius: 10px 10px 0 0;
+      position: relative;
+    }
+
+    .container .front .img {
+      width: 95px;
+      height: 95px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -45px;
+      right: calc(50% - 47.5px);
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .container h3 {
+      text-align: center;
+      margin-top: 3em;
+      font-weight: 700;
+    }
+
+    .container h3 span {
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+
+    .container .city {
+      text-align: center;
+      display: block;
+      margin-top: -10px;
+      color: hsl(0, 0%, 59%);
+    }
+
+    .container p {
+      text-align: center;
+      margin-top: 2.5em;
+      font-weight: 700;
+
+    }
+
+    hr {
+      margin-top: 20px;
+    }
+
+    .container .stadistics {
+      padding: 0 4em;
+      margin-top: -30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .container p span {
+      font-size: 13px;
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="front">
+      <div class="img">
+        <img src="images/image-victor.jpg" alt="hola">
+      </div>
+    </div>
+    <h3> Victor Crest <span>26</span></h3>
+    <span class="city">London</span>
+    <hr>
+    <div class="stadistics">
+      <p>80K <span>Followers</span></p>
+      <p>803K <span>Likes</span></p>
+      <p>1.4K <span>Photos</span></p>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jhon Flores</a>.
+  </div>
+</body>
+
+</html>
