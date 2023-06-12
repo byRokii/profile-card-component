@@ -1,0 +1,101 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+	background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+	background-repeat: no-repeat, no-repeat;
+	background-color: hsl(185deg, 75%, 39%);
+}
+
+main {
+	font-family: "Kumbh Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p,
+h3 {
+	font-size: 18px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container .card {
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 14px;
+	min-width: 190px;
+	box-shadow: 0 60px 80px rgba(0, 0, 0, 0.16);
+	background-color: white;
+}
+
+.container .bg-card {
+	width: 100%;
+	border-radius: 14px 14px 0 0;
+}
+
+.container .img {
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	margin: -55px auto 0 auto;
+	border: 5px solid white;
+}
+
+.container h3 {
+	text-align: center;
+	font-weight: 700;
+}
+
+.container h3 span {
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+
+.container .content {
+	background-color: white;
+}
+
+.container .city {
+	text-align: center;
+	display: block;
+	margin-top: -10px;
+	color: hsl(0, 0%, 59%);
+}
+
+.container p {
+	text-align: center;
+	margin-top: 2.5em;
+	font-weight: 700;
+}
+
+hr {
+	margin-top: 20px;
+}
+
+.container .stadistics {
+	padding: 0 4em;
+	margin-top: -30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container p span {
+	font-size: 13px;
+	font-weight: 400;
+	display: block;
+	color: hsl(0, 0%, 59%);
+}
