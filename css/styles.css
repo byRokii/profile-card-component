@@ -34,11 +34,10 @@ h3 {
 .container .card {
 	display: flex;
 	flex-direction: column;
-
-	border-radius: 14px;
-	min-width: 190px;
-	box-shadow: 0 60px 80px rgba(0, 0, 0, 0.16);
 	background-color: white;
+	border-radius: 14px;
+	box-shadow: 0 60px 80px rgba(0, 0, 0, 0.16);
+	min-width: 190px;
 }
 
 .container .bg-card {
@@ -46,7 +45,7 @@ h3 {
 	border-radius: 14px 14px 0 0;
 }
 
-.container .img {
+.container .user {
 	width: 105px;
 	height: 105px;
 	border-radius: 50%;
